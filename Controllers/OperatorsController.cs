@@ -13,7 +13,7 @@ public class OperatorsController : ControllerBase
 
     private readonly ILogger<WeatherForecastController> _logger;
 
-    public OperatorsController(ILogger<WeatherForecastController> logger)
+    public OperatorsController(ILogger<OperatorsController> logger)
     {
         _logger = logger;
     }
@@ -35,5 +35,12 @@ public class OperatorsController : ControllerBase
     public double Subtracao(double n1, double n2)
     {
         return n1 - n2;
+    }
+
+    [HttpGet]
+    [Route("soma")]
+    public double Soma(double n1, double n2)
+    {
+        return n1 + n2;
     }
 }
