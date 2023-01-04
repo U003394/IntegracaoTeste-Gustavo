@@ -20,13 +20,13 @@ public class WeatherForecastController : ControllerBase
 
     [HttpGet]
     [Route("multiplicar")]
-    public double multiplicar(double n1, double n2)
+    public double Multiplicar(double n1, double n2)
     {
         return n1 * n2;
     }
     [HttpGet]
     [Route("divisao")]
-    public double divisao(double n1, double n2)
+    public double Divisao(double n1, double n2)
     {
         return n1 / n2;
     }
